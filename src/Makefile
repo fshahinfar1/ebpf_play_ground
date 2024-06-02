@@ -19,10 +19,10 @@ compile: ./build/trace.bpf.o
 
 run: ./build/loader
 	@echo loading ... [requires bpftool]
-	# sudo bpftool prog load ./build/trace.bpf.o /sys/fs/bpf/trace_prog autoattach
+	@# sudo bpftool prog load ./build/trace.bpf.o /sys/fs/bpf/trace_prog autoattach
 	sudo ./build/loader -b ./build/trace.bpf.o
-	# @echo showing logs ...
-	# sudo cat /sys/kernel/debug/tracing/trace_pipe;
+	@# @echo showing logs ...
+	@# sudo cat /sys/kernel/debug/tracing/trace_pipe;
 
 # unload:
 # 	@echo unloading ...

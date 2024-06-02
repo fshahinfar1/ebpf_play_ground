@@ -59,7 +59,8 @@ int main(int argc, char *argv[])
 	signal(SIGINT, handle_int);
 	signal(SIGHUP, handle_int);
 	printf("Ready!\n");
-	printf("Hit Ctrl+C to \n");
+	printf("See the log at:\n  sudo cat /sys/kernel/debug/tracing/trace_pipe\n");
+	printf("Hit Ctrl+C to stop\n");
 	while (running) {
 		sleep(3);
 	}
