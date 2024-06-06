@@ -1,0 +1,6 @@
+[submodule "src/lib/ubpf"]
+	path = src/lib/ubpf
+	url = git@github.com:fshahinfar1/uBPF.git
+[submodule "src/lib/libbpf"]
+	path = src/lib/libbpf
+	url = https://github.com/libbpf/libbpf
